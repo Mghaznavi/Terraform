@@ -50,8 +50,49 @@ variable  "aws_instance_type" {
   default = "t2.micro"
 }
 
-variable  "aws_tags" {
+variable  "aws_tags_name" {
   default = "Alex_digital"
+}
+
+variable  "aws_tags_days" {
+  default = "Mon,Tue,Wed"
+}
+
+variable  "aws_tags_email" {
+  default = "mohammad.ghaznavi@alexsolutions.com.au"
+}
+
+variable  "aws_tags_environment" {
+  default = "POC"
+}
+
+variable  "aws_tags_hostname" {
+  default = "dqpoc2"
+}
+
+variable  "aws_tags_customer" {
+  default = "Alex Solutions"
+}
+
+variable  "aws_tags_override" {
+  default = "Alex"
+}
+
+variable  "aws_tags_sked" {
+  default = "both"
+}
+
+variable  "aws_tags_time" {
+  default = "07:00-19:00"
+}
+variable  "aws_tags_timezone" {
+  default = "Australia/Melbourne"
+}
+variable  "aws_tags_chargeable" {
+  default = "no"
+}
+variable  "aws_tags_orgname" {
+  default = "Alex"
 }
 ##############################################
 
