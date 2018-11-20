@@ -49,7 +49,18 @@ resource "aws_instance" "web" {
   }
 
   tags {
-    Name = "${var.aws_tags}"
+    Name = "${var.aws_tags_name}"
+    Days  = "${var.aws_tags_days}"
+    Email =   "${var.aws_tags_email}"
+    Environmant = "${var.aws_tags_environment}"
+    Hostnames=  "${var.aws_tags_hostname}"
+    IC-Customer = "${var.aws_tags_customer}"
+    Override  = "${var.aws_tags_override}"
+    Sked  = "${var.aws_tags_sked}"
+    Time  = "${var.aws_tags_time}"
+    Timezone  = "${var.aws_tags_timezone}"
+    Chargeable  = "${var.aws_tags_chargeable}"
+    org-name  = "${var.aws_tags_orgname}"
   }
 
   credit_specification {
@@ -68,7 +79,7 @@ resource "aws_security_group_rule" "allow_all" {
   prefix_list_ids = ["pl-12c4e678"]
 
   tags {
-    Name = "${var.security_tags}"
+    Name = "${var.security_tag}"
   }
 
   security_group_id = ""
